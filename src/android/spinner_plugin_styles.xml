@@ -8,6 +8,9 @@
          <item name="android:textColor">#FFFFFF</item>
          <item name="android:textStyle">normal</item>
          <item name="android:textSize">12sp</item>
+         <item name="android:layout_gravity">center</item>
+         <item name="android:minHeight">640dp</item>
+         <item name="android:minWidth">640dp</item>
      </style>
      <style name="CustomAlertDialogStyle">
          <item name="android:bottomBright">@color/transparent</item>
