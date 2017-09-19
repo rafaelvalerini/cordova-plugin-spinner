@@ -11,9 +11,6 @@ import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import android.app.Application;
-import android.content.res.Resources;
-
 public final class SpinnerPlugin extends CordovaPlugin {
 
     private FakeR R = null;
@@ -93,10 +90,8 @@ public final class SpinnerPlugin extends CordovaPlugin {
             this.spinnerDialog = new ProgressDialog(this.cordova.getActivity());
         }
         
-        Application app=this.cordova.getActivity().getApplication();
-        Resources resources = app.getResources();
-        int width = (int)(resources.getDisplayMetrics().widthPixels*0.90);
-        int height = (int)(resources.getDisplayMetrics().heightPixels*0.90);
+        int width = (int)(this.cordova.getActivity().getResources().getDisplayMetrics().widthPixels*0.90);
+        int height = (int)(this.cordova.getActivity().getResources().getDisplayMetrics().heightPixels*0.90);
 
         this.spinnerDialog.getWindow().setLayout(width, height);
         
