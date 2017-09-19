@@ -2,7 +2,7 @@
  <resources>
      <style name="SpinnerPluginTransparentDialog" parent="android:Theme.Holo.Dialog">
          <item name="android:windowBackground">@android:color/transparent</item>   
-         <item name="android:background">#FFFFFF</item>
+         <item name="android:background">#00498c</item>
          <item name="android:textColorPrimary">#FFFFFF</item>
          <item name="android:backgroundDimEnabled">false</item>
          <item name="android:textColor">#FFFFFF</item>
